@@ -13,4 +13,17 @@ public class RobotRoute {
     this.robot = robot;
     this.initialState = initialState;
   }
+
+  public State addMove(Move move) {
+    moves.add(move);
+    return getState();
+  }
+
+  public State getState() {
+    State s = initialState;
+    for (Move m: moves) {
+      s = s.apply(m);
+    }
+    return s;
+  }
 }
