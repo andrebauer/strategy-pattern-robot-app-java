@@ -13,5 +13,8 @@ class TestPoint extends Specification {
         !p.equals(q)
         p.equals(r)
         !q.equals(r)
+        p.equals(p)
+        q.equals(q)
+        r.equals(r)
     }
 }
