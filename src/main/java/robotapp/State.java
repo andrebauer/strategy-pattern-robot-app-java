@@ -8,4 +8,8 @@ public class State {
     this.point = point;
     this.orientation = orientation;
   }
+
+  public boolean equals(State p) {
+    return this.orientation == p.orientation && this.point.equals((p.point));
+  }
 }
