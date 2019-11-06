@@ -10,6 +10,10 @@ public class Point {
   }
 
   public boolean equals(Point p) {
-    return this.x == p.x && this.y == y;
+    return this.x == p.x && this.y == p.y;
+  }
+
+  public String toString() {
+    return String.format("(%d, %d)", x, y);
   }
 }

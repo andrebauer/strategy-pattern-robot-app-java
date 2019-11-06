@@ -26,4 +26,12 @@ public class RobotRoute {
     }
     return s;
   }
+
+  public String toMovesString() {
+    StringBuilder sb = new StringBuilder();
+    for (Move m: moves) {
+      sb.append(m + ", ");
+    }
+    return sb.toString();
+  }
 }

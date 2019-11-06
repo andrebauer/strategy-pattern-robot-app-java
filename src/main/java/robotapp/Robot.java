@@ -15,4 +15,8 @@ public class Robot {
   public Move doMove(State state) {
     return behaviour.getMove(state);
   }
+
+  public String toString() {
+    return this.name;
+  }
 }
