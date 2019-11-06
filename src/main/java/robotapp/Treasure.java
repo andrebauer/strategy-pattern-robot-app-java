@@ -1,7 +1,9 @@
 package robotapp;
 
-public class Treasure extends Point {
-  public Treasure(int x, int y) {
-    super(x,y);
+public class Treasure {
+  public final Point location;
+
+  public Treasure(Point location) {
+    this.location = location;
   }
 }
